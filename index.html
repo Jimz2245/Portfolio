@@ -4,51 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jimmy Zou | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Jimmy Zou</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
     <header>
         <h1>Hi, I'm Jimmy</h1>
         <h3>Welcome to my portfolio</h3>
         <p>CS @ Binghamton University, aspiring software engineer and AI developer</p>
         <a href="files/JZ9-24.pdf" target="_blank" class="btn">Download Resume</a>
+        <a href="#about" class="btn btn-primary scroll-btn">See More</a>
+
     </header>
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>I am a computer science student at Binghamton University with a passion for software engineering and artificial intelligence. I enjoy building projects that solve real-world problems and enhance user experiences.</p>
+            <div class="about-flex">
+                <img src="files/profile.jpg" alt="Profile Picture of Jimmy" class="profile-pic">
+                <p>
+                    I am a computer science student at Binghamton University with a passion for
+                    software engineering and artificial intelligence. I enjoy building projects
+                    that solve real-world problems and enhance user experiences.
+                </p>
+            </div>
         </section>
 
         <section id = "skills">
             <h2>Skills</h2>
 
-            <p>Programming Languages: Python, Java, C, Assembly, HTML, CSS, Javascript</p>
-            <p>Frameworks/Databases: React, Node.js, MySQL</p>
-            <p>Tools: Git, VSCode, Intellij</p>
+            <p>
+                <span class="skill-chip-start">Programming Languages:</span>
+                <span class="skill-chip">Python</span>
+                <span class="skill-chip">Java</span>
+                <span class="skill-chip">C</span>
+                <span class="skill-chip">HTML</span>
+                <span class="skill-chip">CSS</span>
+                <span class="skill-chip">JavaScript</span>
+                <span class="skill-chip">Assembly</span>  
+            </p>
+            <p>
+                <span class="skill-chip-start">Frameworks/Databases:</span>
+                <span class="skill-chip">React</span>
+                <span class="skill-chip ">Node.js</span>
+                <span class="skill-chip">MySQL</span>  
+            </p>
+
+            <p>
+                <span class="skill-chip-start">Tools:</span>
+                <span class="skill-chip">Git</span>
+                <span class="skill-chip">VSCode</span>
+                <span class="skill-chip">IntelliJ</span>
+            </p>
 
         </section>
 
-        <section id = "education">
+        <section id="education" class="container">
             <h2>Education</h2>
 
-            <p>Binghamton University, State University of New York</p>
-            <p>Bachelor of Science in Computer Science (3.63/4.00 GPA), Expected Graduation: May 2028</p>
-            <p>Relevant Coursework:</p>
-            <ul>
-                <li>Data Structures and Algorithms</li>
-                <li>Machine Architecture</li>
-                <li>Object Oriented Programming/Design</li>
-                <li>Linear Algebra</li>
-            </ul>
+            <div class="education-card">
+                <h3>Binghamton University, State University of New York</h3>
+                <p><strong>Bachelor of Science in Computer Science</strong> (GPA: 3.63/4.00)</p>
+                <p>Expected Graduation: May 2028</p>
+                <p><strong>Relevant Coursework:</strong></p>
+                <ul>
+                    <li>Data Structures and Algorithms</li>
+                    <li>Machine Architecture</li>
+                    <li>Object Oriented Programming/Design</li>
+                    <li>Linear Algebra</li>
+                </ul>
+            </div>
         </section>
+
             
         <section id="projects">
             <h2>Projects</h2>
-            <ul>
-                <li><strong>Project 1:</strong> Description of project 1.</li>
-                <li><strong>Project 2:</strong> Description of project 2.</li>
-                <li><strong>Project 3:</strong> Description of project 3.</li>
-            </ul>
+            <div class="project-grid">
+                <div class="card">
+                    <h3>TASC Website</h3>
+                    <p>Built a full-stack website for a cultural organization to streamline events and announcements.</p>
+                    <a href="#" class="card-btn">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>Online Food Ordering</h3>
+                    <p>Java-based ordering system with cart, checkout, and receipt features.</p>
+                    <a href="#" class="card-btn">View Project</a>
+                </div>
+                <div class="card">
+                    <h3>Shape Escape</h3>
+                    <p>2D puzzle game built with Java, focusing on logic-based challenges and UI design.</p>
+                    <a href="#" class="card-btn">View Project</a>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
@@ -56,8 +116,9 @@
             <p>You can reach me at: </p>
             <p>Email: <a href="mailto: Jimz7192@gmail.com">Jimz7192@gmail.com</a></p>
             <p>Phone: 347-757-7979</p>
-            <p>Connect With Me On LinkedIn: <a href="https://www.linkedin.com/in/jimmy-zou-62083727a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjnjAGQ6DTe6fe4vZUtUgsQ%3D%3D">Jimmy Zou</a></p>
+            <p>Connect With Me On LinkedIn: <a href="https://www.linkedin.com/in/jimmy-zou-62083727a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjnjAGQ6DTe6fe4vZUtUgsQ%3D%3D" target = "_blank">Jimmy Zou</a></p>
         </section>
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
